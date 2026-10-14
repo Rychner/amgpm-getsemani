@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="id" data-aksen="emas">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AMGPM Ranting [NAMA RANTING]</title>
+<meta name="description" content="Situs resmi Angkatan Muda Gereja Protestan Maluku (AMGPM) ranting: agenda, warta, renungan, dan pelayanan pemuda jemaat.">
+<meta name="theme-color" content="#0A2540">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&amp;family=Figtree:wght@400;500;600;700&amp;family=Fraunces:ital,opsz,wght@1,9..144,400&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.add('js');</script>
+<script src="script.js" defer></script>
+</head>
+<body>
+
+<a class="lompat" href="#isi">Lewati ke konten</a>
+
+<!-- ============ KEPALA ============ -->
+<header class="kepala" id="kepala">
+  <div class="wadah kepala-dalam">
+    <a class="merek" href="#beranda">
+      <!-- Ganti baris di bawah dengan: <img class="logo-img" src="logo.png" alt="Logo AMGPM"> -->
+      <span class="logo" aria-hidden="true">LOGO</span>
+      <span class="merek-teks">
+        <strong>AMGPM</strong>
+        <small>Ranting <span data-isi="ranting">[NAMA RANTING]</span> · Jemaat GPM <span data-isi="jemaat">[NAMA JEMAAT]</span></small>
+      </span>
+    </a>
+
+    <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="menu-utama" aria-label="Buka menu">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+
+    <nav class="menu" id="menu-utama" aria-label="Menu utama">
+      <a href="#tentang">Tentang</a>
+      <a href="#agenda">Kegiatan</a>
+      <a href="#warta">Warta</a>
+      <a href="#galeri">Galeri</a>
+      <a href="#bidang">Bidang</a>
+      <a href="#dukung">Dukung</a>
+      <a class="tombol tombol-gelap menu-cta" href="#gabung">Gabung</a>
+    </nav>
+  </div>
+</header>
+
+<main id="isi">
+
+<!-- ============ BERANDA ============ -->
+<section class="hero" id="beranda">
+  <div class="wadah hero-dalam">
+    <div class="hero-teks">
+      <p class="label label-aksen">Angkatan Muda Gereja Protestan Maluku</p>
+      <h1>Muda, beriman, berakar di Maluku.</h1>
+      <p class="hero-lead">Ruang bagi pemuda-pemudi jemaat untuk bertumbuh dalam iman, bersekutu, dan melayani bersama.</p>
+      <div class="aksi">
+        <a class="tombol tombol-aksen tombol-besar" href="#agenda">Lihat agenda</a>
+        <a class="tombol tombol-garis-terang tombol-besar" href="#tentang">Kenali kami</a>
+      </div>
+      <figure class="motto">
+        <figcaption class="label label-aksen">Motto AMGPM</figcaption>
+        <blockquote>Kamu adalah garam dan terang dunia.</blockquote>
+      </figure>
+    </div>
+
+    <div class="hero-visual">
+      <!-- Ganti isi .hero-foto dengan: <img src="foto-hero.jpg" alt="Pemuda AMGPM saat ibadah"> -->
+      <div class="hero-foto">
+        <span class="ph"><b>Foto kegiatan ranting</b><small>[GANTI DENGAN FOTO ASLI]</small></span>
+      </div>
+      <div class="kartu-ibadah" aria-live="polite">
+        <span class="label">Ibadah pemuda berikutnya</span>
+        <strong id="ibadah-waktu">[HARI], [TANGGAL] · [JAM] WIT</strong>
+        <span id="ibadah-lokasi">[LOKASI IBADAH]</span>
+      </div>
+    </div>
+  </div>
+  <div class="tenun" aria-hidden="true"></div>
+</section>
+
+<!-- ============ AGENDA ============ -->
+<section class="bagian" id="agenda">
+  <div class="wadah">
+    <div class="judul-bagian">
+      <div>
+        <p class="label">Kegiatan</p>
+        <h2>Agenda terdekat</h2>
+      </div>
+    </div>
+    <div class="filter" id="agenda-filter" role="group" aria-label="Saring kegiatan menurut jenis"></div>
+    <ul class="agenda" id="agenda-daftar">
+      <li class="kosong">Agenda belum tersedia.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ TENTANG ============ -->
+<section class="bagian bagian-kabut" id="tentang">
+  <div class="wadah dua-kolom">
+    <div class="kolom reveal">
+      <p class="label">Tentang kami</p>
+      <h2>Wadah pemuda jemaat untuk bertumbuh dalam iman.</h2>
+      <p class="paragraf">AMGPM adalah organisasi pemuda Gereja Protestan Maluku. Di tingkat jemaat, pemuda-pemudi berkumpul dalam ranting: tempat bersekutu, belajar, dan melayani sesama.</p>
+      <p class="paragraf" id="sejarah">[Tulis sejarah singkat ranting: tahun berdiri, nama ketua pertama, dan satu cerita yang paling dikenang.]</p>
+    </div>
+    <div class="kolom reveal">
+      <p class="kecil-tebal">Dari pengurus besar sampai ranting</p>
+      <ol class="tangga">
+        <li>Pengurus Besar</li>
+        <li>Pengurus Daerah</li>
+        <li>Pengurus Cabang</li>
+        <li class="di-sini"><strong>Pengurus Ranting <span data-isi="ranting">[NAMA RANTING]</span></strong><small>Kamu ada di sini</small></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BIDANG ============ -->
+<section class="bagian" id="bidang">
+  <div class="wadah">
+    <div class="judul-bagian">
+      <div>
+        <p class="label">Bidang pelayanan</p>
+        <h2>Tempat kamu melayani.</h2>
+      </div>
+    </div>
+    <div class="kartu-grid">
+      <article class="kartu reveal">
+        <span class="ikon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v18M6 9h12"/></svg></span>
+        <h3>Ibadah dan kerohanian</h3>
+        <p>Memimpin ibadah pemuda, pendalaman Alkitab, dan pembinaan iman.</p>
+      </article>
+      <article class="kartu reveal">
+        <span class="ikon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18V6l10-2v12"/><circle cx="6.5" cy="18" r="2.5"/><circle cx="16.5" cy="16" r="2.5"/></svg></span>
+        <h3>Musik dan paduan suara</h3>
+        <p>Koor, band, dan pemain alat musik yang melayani lewat pujian.</p>
+      </article>
+      <article class="kartu reveal">
+        <span class="ikon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.5A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg></span>
+        <h3>Diakonia dan sosial</h3>
+        <p>Aksi peduli bagi jemaat dan masyarakat sekitar.</p>
+      </article>
+      <article class="kartu reveal">
+        <span class="ikon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg></span>
+        <h3>Olahraga dan seni</h3>
+        <p>Pertandingan persahabatan, lomba, dan ruang untuk bakat kreatif.</p>
+      </article>
+      <article class="kartu reveal">
+        <span class="ikon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M10 9l5 3-5 3z"/></svg></span>
+        <h3>Media dan kreatif</h3>
+        <p>Dokumentasi, desain, siaran, dan konten digital ranting.</p>
+      </article>
+      <article class="kartu reveal">
+        <span class="ikon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h6a2 2 0 0 1 2 2v12a2 2 0 0 0-2-2H4z"/><path d="M20 5h-6a2 2 0 0 0-2 2v12a2 2 0 0 1 2-2h6z"/></svg></span>
+        <h3>Pendidikan dan kaderisasi</h3>
+        <p>Pelatihan kepemimpinan dan pembinaan kader muda.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WARTA & RENUNGAN ============ -->
+<section class="bagian bagian-kabut" id="warta">
+  <div class="wadah warta-grid">
+    <article class="renungan reveal">
+      <p class="label label-terang">Renungan minggu ini</p>
+      <h2 id="renungan-judul">[Judul renungan]</h2>
+      <p class="ayat" id="renungan-ayat">[Ayat bacaan dan alamatnya]</p>
+      <p id="renungan-ringkas">[Ringkasan renungan dalam dua atau tiga kalimat.]</p>
+      <div class="aksi">
+        <a class="tombol tombol-aksen" id="renungan-baca" href="#warta">Baca renungan</a>
+        <button class="tombol tombol-garis-terang" id="renungan-bagi" type="button">Bagikan ke WhatsApp</button>
+      </div>
+    </article>
+    <div class="warta-daftar reveal">
+      <div class="warta-kepala">
+        <h2>Warta terbaru</h2>
+      </div>
+      <ul id="warta-daftar">
+        <li class="kosong">Belum ada warta.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALERI ============ -->
+<section class="bagian" id="galeri">
+  <div class="wadah">
+    <div class="judul-bagian">
+      <div>
+        <p class="label">Galeri</p>
+        <h2>Dari kegiatan kami.</h2>
+      </div>
+    </div>
+    <div class="galeri" id="galeri-grid"></div>
+  </div>
+</section>
+
+<!-- ============ GABUNG ============ -->
+<section class="gabung" id="gabung">
+  <div class="wadah gabung-dalam">
+    <div>
+      <h2>Belum bergabung? Pintu ranting selalu terbuka.</h2>
+      <p>Isi formulir singkat, pengurus akan menghubungi kamu lewat WhatsApp.</p>
+    </div>
+    <div class="aksi">
+      <button class="tombol tombol-gelap tombol-besar" id="buka-gabung" type="button">Daftar anggota</button>
+      <a class="tombol tombol-garis-gelap tombol-besar" id="chat-pengurus" href="#kontak">Chat pengurus</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DUKUNG ============ -->
+<section class="bagian" id="dukung">
+  <div class="wadah dua-kolom">
+    <div class="kolom reveal">
+      <p class="label">Dukung pelayanan</p>
+      <h2>Ambil bagian dalam pelayanan pemuda.</h2>
+      <p class="paragraf">Persembahan dan donasi dipakai untuk kegiatan ibadah, aksi diakonia, dan perlengkapan pelayanan ranting.</p>
+    </div>
+    <div class="kolom reveal">
+      <div class="kartu-dukung">
+        <!-- Ganti .qris dengan: <img src="qris.png" alt="Kode QRIS ranting"> atau isi CONFIG.dukungan.qris di script.js -->
+        <div class="qris" id="qris"><span>[QRIS RANTING]</span></div>
+        <div class="rekening">
+          <span class="kecil">Transfer bank</span>
+          <strong id="rek-nomor">[NAMA BANK] [NOMOR REKENING]</strong>
+          <span class="kecil" id="rek-nama">a.n. [NAMA PEMEGANG REKENING]</span>
+          <a class="tombol tombol-gelap" id="konfirmasi-persembahan" href="#kontak">Konfirmasi persembahan</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ KAKI ============ -->
+<footer class="kaki" id="kontak">
+  <div class="tenun" aria-hidden="true"></div>
+  <div class="wadah kaki-dalam">
+    <div class="kaki-grid">
+      <div class="kaki-merek">
+        <strong>AMGPM</strong>
+        <p>Angkatan Muda Gereja Protestan Maluku, Ranting <span data-isi="ranting">[NAMA RANTING]</span>, Jemaat GPM <span data-isi="jemaat">[NAMA JEMAAT]</span>.</p>
+      </div>
+      <nav class="kaki-kolom" aria-label="Tautan cepat">
+        <p class="label label-aksen">Tautan</p>
+        <a href="#tentang">Tentang</a>
+        <a href="#agenda">Kegiatan</a>
+        <a href="#warta">Warta</a>
+        <a href="#galeri">Galeri</a>
+      </nav>
+      <div class="kaki-kolom">
+        <p class="label label-aksen">Kontak</p>
+        <span id="kontak-alamat">[ALAMAT SEKRETARIAT]</span>
+        <span id="kontak-wa">[NOMOR WHATSAPP]</span>
+        <span id="kontak-email">[EMAIL RANTING]</span>
+        <span id="kontak-ig">@[AKUN INSTAGRAM]</span>
+      </div>
+    </div>
+    <p class="hak-cipta">© <span id="tahun">2026</span> AMGPM Ranting <span data-isi="ranting">[NAMA RANTING]</span>. Bagian dari Gereja Protestan Maluku.</p>
+  </div>
+</footer>
+
+<!-- ============ FORM GABUNG ============ -->
+<dialog class="dlg" id="dlg-gabung" aria-labelledby="dlg-judul">
+  <form id="form-gabung" novalidate>
+    <h2 id="dlg-judul">Daftar anggota</h2>
+    <p class="kecil">Data kamu dikirim lewat WhatsApp ke pengurus ranting. Tidak ada yang disimpan di situs ini.</p>
+
+    <label for="f-nama">Nama lengkap</label>
+    <input id="f-nama" name="nama" type="text" required autocomplete="name">
+
+    <label for="f-wa">Nomor WhatsApp</label>
+    <input id="f-wa" name="wa" type="tel" inputmode="tel" required autocomplete="tel" placeholder="08xx xxxx xxxx">
+
+    <label for="f-bidang">Bidang yang diminati</label>
+    <select id="f-bidang" name="bidang">
+      <option>Ibadah dan kerohanian</option>
+      <option>Musik dan paduan suara</option>
+      <option>Diakonia dan sosial</option>
+      <option>Olahraga dan seni</option>
+      <option>Media dan kreatif</option>
+      <option>Pendidikan dan kaderisasi</option>
+      <option>Belum tahu, ingin ngobrol dulu</option>
+    </select>
+
+    <label for="f-pesan">Pesan (boleh dikosongkan)</label>
+    <textarea id="f-pesan" name="pesan" rows="3"></textarea>
+
+    <p class="galat" id="f-galat" role="alert" hidden></p>
+
+    <div class="dlg-aksi">
+      <button class="tombol tombol-garis-gelap" type="button" data-tutup>Batal</button>
+      <button class="tombol tombol-gelap" type="submit">Kirim lewat WhatsApp</button>
+    </div>
+  </form>
+</dialog>
+
+</body>
+</html>
